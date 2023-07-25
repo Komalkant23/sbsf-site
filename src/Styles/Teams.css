@@ -1,0 +1,131 @@
+.html{
+    height: 100%;
+    font-size: 16px;
+    width: 100%;
+}
+
+.teamCardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.5rem;
+    padding: 1rem;
+    flex: 0 0 calc(33.33% - 0.4rem);
+}
+
+.reverseCards{
+    flex-direction: row-reverse;
+}
+
+.teamCardContainer:hover{
+    background-color: #FFE2A9;
+}
+
+.teamCardContainer img{
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.teamCardContainer .cardInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    align-items: center;
+    font-size: 0.8rem;
+    font-family: "Roboto", Sans-serif;
+    font-weight: 400;
+    width: 50%;
+    text-align: center;
+}
+
+.slidesContainer {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-shrink: 1;
+    width: 67rem;
+    margin: auto;
+    padding-bottom: 2rem;
+    border-bottom: 0.15rem dashed;
+}
+
+.slide {
+    display: flex !important;
+    flex-wrap: wrap;
+}
+
+.teamCardIcons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.2rem;
+}
+
+.teamCardIcons a{
+    color:black;
+    border-radius: 50%;
+    padding: 0.3rem;
+}
+
+/* @media screen and (min-width: 890px) and (max-width: 1056px) {
+
+    .teamCardContainer{
+        gap:0.5rem;
+        width:18rem;
+        height:10rem;
+        padding: 0rem;
+    }
+    .teamCardContainer img{
+        width: 45%;
+    }
+
+    .slidesContainer{
+        width:54rem;
+        height:20rem;
+        justify-content: center;
+    }
+
+    .teamCardContainer .cardInfo{
+        font-size: 0.66rem;
+    }
+}*/
+
+@media screen and (min-width: 770px) and (max-width: 1056px) {
+    .slidesContainer{
+        width:95%
+    }
+
+    .teamCardContainer{
+        gap:0.5rem;
+    }
+
+    .teamCardContainer .cardInfo{
+        font-size: 0.67rem;
+    } 
+}  
+
+@media screen and (max-width: 769px) {
+    .slidesContainer{
+        width:90%;
+    }
+
+    .slide {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .teamCardContainer{
+        flex-direction: column;
+    }
+
+    .teamCardContainer img{
+        width: 75%;
+    }
+
+    .teamCardContainer .cardInfo{
+        font-size: 1rem;
+        width: 100%
+    }
+}

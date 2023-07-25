@@ -1,0 +1,46 @@
+.buttonSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 1.5rem;
+}
+
+.btnContainer{
+    padding: 0rem 1rem;
+    width: 67rem;
+    display: flex;
+    gap: 1rem;
+    justify-content:center;
+    align-items: center;
+}
+
+.btnContainer button{
+    width: 20%;
+    padding: 1rem 2.5rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: calc(0.6rem + 0.4vw);
+}
+
+.locationBtn0{
+    background-color: #FFE2A9;
+}
+
+.locationBtn1{
+    background-color: #083A28;
+    color: white;
+}
+
+@media screen and (max-width: 769px){
+    .btnContainer{
+        flex-direction: column;
+    }
+
+    .btnContainer button{
+        width:100%;
+        font-size: calc(0.9rem + 0.4vw);
+    }
+}

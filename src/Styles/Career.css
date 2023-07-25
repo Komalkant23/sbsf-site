@@ -1,0 +1,115 @@
+.careerHeaderImg{
+    height: 20rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/sbs-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.careerHeaderImg h1{
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-family: 'Roboto' sans-serif;
+    font-weight: 700;
+    color:white;
+}
+
+.joinUsSection{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.joinUsSection .joinUsContainer{
+    max-width: 67rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+
+}
+
+.joinUsSection .joinUsContainer p{
+    font-weight: 500;
+    font-size: calc(0.7rem + 0.5vw);
+    align-self: flex-start;
+}
+
+.joinUsSection .joinUsContainer .jobRequirements{
+    width: 85%; 
+}
+
+.joinUsSection .joinUsContainer .jobRequirements .aboutWorkContentCard{
+    display: flex;
+    flex-direction: column;
+}
+
+.joinUsSection .joinUsContainer .jobRequirements .aboutWorkContentCard h5{
+    font-weight: 600;
+    font-size: calc(0.8rem + 0.5vw);
+}
+
+.joinUsSection .joinUsContainer .jobRequirements .aboutWorkContentCard p{
+    font-weight: 300;
+    font-size: calc(0.6rem + 0.5vw);
+}
+
+.jobsSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #083A28;
+    padding: 1rem;
+}
+
+.jobsSection .jobsContainer{
+    max-width: 67rem;
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.jobCards{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jobCards h4{
+    font-weight: 600;
+    font-size: calc(1rem + 0.5vw);
+    color: #FFE2A9;
+    text-transform: uppercase;
+}
+
+.jobCards p{
+    font-weight: 300;
+    font-size: calc(0.6rem + 0.5vw);
+    color: white;
+}
+
+.jobCards button{
+    background-color: #FFE2A9;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: transform 0.2s ease-in-out;
+}
+
+.jobCards button:hover{
+    transform: scale(0.8);
+}
+
+@media screen and (max-width: 769px) {
+    .jobsSection .jobsContainer{
+        flex-direction: column;
+    }
+}

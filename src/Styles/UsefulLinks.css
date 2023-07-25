@@ -1,0 +1,37 @@
+.header {
+  font-family: "Roboto", Sans-serif;
+  font-weight: 600;
+  width: 67rem;
+  font-size: calc(1.1rem + 0.5vw);
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.linkContainers {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-shrink: 1;
+}
+
+.linkContainer {
+  max-width: 67rem;
+  height: 6.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: auto 100px;
+  background-color: #083a28;
+  color: #ffe2a9;
+}
+
+.linkContainer1 {
+  max-width: 67rem;
+  height: 6.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: auto 100px;
+  background-color: #ffe2a9;
+  color: #083a28;
+}

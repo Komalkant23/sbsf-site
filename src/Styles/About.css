@@ -1,0 +1,284 @@
+.html{
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", Sans-serif;
+}
+
+.aboutImg{
+    display:flex;
+    flex-shrink: 1;
+    height: 24rem;
+}
+
+.aboutImg img{
+    width:100%;
+    object-fit:cover;
+}
+
+.aboutSection{
+    padding: 2rem;
+}
+
+.aboutSection .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutSection .intro p{
+    max-width: 67rem;
+    padding: 0 1rem;
+    font-weight: 600;
+    font-size: calc(0.7rem + 0.5vw);
+    line-height: calc(1.5rem + 0.5vw);
+}
+
+.aboutSection .aboutContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+}
+
+.aboutSection .aboutContent .contentBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    max-width: 67rem;
+    padding:2rem;
+    flex-shrink: 1;
+}
+
+.contentContainer {
+    display:flex;
+    width: 90%;
+    flex-shrink: 1;
+}
+
+.contentContainer .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    background-color: #083A28;
+    padding: 1rem;
+}
+
+.contentContainer .icon img{
+    width: 70%;
+}
+
+.contentContainer .content {
+    background-color: #FFE2A9;
+    padding: 0.8rem;
+    width:85%;
+}
+
+.contentContainer .content h5{
+    font-weight: 600;
+    font-size: calc(0.9rem + 0.5vw);
+}
+
+.contentContainer .content p{
+    font-weight: 400;
+    font-size: calc(0.6rem + 0.5vw);
+}
+
+.aboutWorkSection{
+    background-color: #083A28;
+    padding: 2rem;
+}
+
+.aboutWorkSection .sectionHeader{
+    color:#FFE2A9;
+}
+
+.aboutWorkSection .intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutWorkSection .intro p{
+    max-width: 67rem;
+    padding: 0 1rem;
+    font-weight: 600;
+    font-size: calc(0.7rem + 0.5vw);
+    line-height: calc(1.5rem + 0.5vw);
+    color: white;
+}
+
+.aboutWorkSection .aboutWorkContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutWorkSection .aboutWorkContent .content{
+    display: flex;
+    flex-direction: column;
+    max-width: 67rem;
+    padding: 1rem;
+    flex-shrink: 1;
+}
+
+.aboutWorkSection .aboutWorkContent .content .aboutWorkContentCard{
+    display:flex;
+    flex-direction: column;
+}
+
+.aboutWorkSection .aboutWorkContent .content .aboutWorkContentCard h5{
+    font-weight: 600;
+    font-size: calc(0.8rem + 0.5vw);
+    color: #FFE2A9;
+}
+
+.aboutWorkSection .aboutWorkContent .content .aboutWorkContentCard p{
+    font-weight: 300;
+    font-size: calc(0.6rem + 0.5vw);
+    color:white;
+    border-bottom: 2px solid white;
+    padding-bottom: 1rem;
+}
+
+.initiativeSection{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.initiativeSection .initiativeContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 67rem;
+    flex-shrink: 1;
+    padding: 1rem;
+}
+
+.initiativeSection .initiativeContainer h5{
+    font-weight: 600;
+    font-size: calc(0.8rem + 0.5vw);
+    padding-bottom: 1rem;
+}
+
+.initiativeSection .initiativeContainer p{
+    font-weight: 350;
+    font-size: calc(0.6rem + 0.5vw);
+}
+
+.initiativeSection .initiativeContainer .initiativeCardContainer{
+    display: flex;
+    width: 100%;
+}
+
+.initiativeCard{
+    width: 20%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.initiativeCard .icon{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.initiativeCard .icon img{
+    width: 50%;
+}
+
+.initiativeCard .text{
+    width: 100%;
+    height: 50%;
+    background-color: #FFE2A9;
+    padding:0.8rem;
+}
+
+.initiativeCard .text p{
+    font-size: calc(0.6rem + 0.5vw);
+    font-weight: 350;
+}
+
+.initiativeCard .text p span{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 769px) {
+    .contentContainer .icon img{
+        width: 60%;
+    }
+
+    .contentContainer .icon {
+        width: 40%;
+    }
+    
+    .contentContainer .content {
+        width:60%;
+    }
+
+    .initiativeSection .initiativeContainer .initiativeCardContainer{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .initiativeCard{
+        width: 100%;
+        height:fit-content;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .initiativeCard .icon{
+        width: 60%;
+        height: 60%;
+    }
+    
+    .initiativeCard .text{
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+
+    .initiativeCard .text p{
+        font-size: calc(0.7rem + 0.6vw)
+    }
+
+    .contentContainer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 432px) {
+    .initiativeCard .icon{
+        height: 50%;
+    }
+    
+    .initiativeCard .text{
+        height: 50%;
+    }
+
+    .contentContainer{
+        flex-direction: column;
+    }
+
+    .contentContainer .icon img{
+        width: 60%;
+    }
+
+    .contentContainer .icon {
+        width: 100%;
+    }
+    
+    .contentContainer .content {
+        width:100%;
+    }
+}

@@ -1,0 +1,123 @@
+.ourWorkContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    padding-bottom: 4rem;
+    background-color: #083A28;
+    margin-bottom: 1rem;
+}
+
+ .ourWorkContainer1{
+    background-color:#FFE2A9;
+}
+
+.ourWorkContainer .ourWorkCard{
+    max-width: 67rem;
+    display: flex;
+    justify-content:center;
+    gap:2rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+ .ourWorkContainer1 .ourWorkCard{
+    flex-direction: row-reverse;
+}
+
+.ourWorkContainer .ourWorkCard .image h4{
+    color: #FFE2A9;
+    font-weight: 600;
+    font-size: calc(1.3rem + 0.5vw);
+    text-transform: uppercase;
+}
+
+.ourWorkContainer1 .ourWorkCard .image h4{
+    color:#083A28;
+}
+
+.ourWorkContainer .ourWorkCard .image div{
+    width: 28rem;
+    height:19rem ;
+}
+
+.ourWorkContainer .ourWorkCard .image{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ourWorkContainer .ourWorkCard .image div img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position: 0 30%;
+}
+
+
+.infoContainer{
+    padding: 1rem;
+    height:19rem ;
+    max-width: 40rem;
+    align-self:last baseline;
+}
+
+.infoContainer .infoContent h5{
+    padding: 0.5rem;
+    color: #FFE2A9;
+    font-weight: 600;
+    font-size: calc(1rem + 0.5vw);
+}
+
+.ourWorkContainer1 .infoContainer .infoContent h5{
+    color:#083A28;
+}
+
+.infoContainer .infoContent .textContainer{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.4rem;
+    min-width: 100%;
+    height: 5.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    font-weight: 600;
+    font-size: calc(0.6rem + 0.5vw);
+    transition: height 0.2s ease-in-out;
+    overflow-y: hidden;
+    gap:1rem;
+}
+
+.infoContainer .infoContent .expanded{
+    height: 10rem;
+}
+
+.infoContainer .infoContent .textContainer span{
+    align-self: center;
+    font-size: calc(1.4rem + 0.5vw);
+    padding: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1020px){
+    .ourWorkContainer .ourWorkCard .image div{
+        width:45vw;
+        height:35vw;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .ourWorkContainer .ourWorkCard{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+ @media screen and (max-width: 520px) {
+    .ourWorkContainer .ourWorkCard .image div{
+        width: 80vw;
+        height:60vw ;
+    }
+}  

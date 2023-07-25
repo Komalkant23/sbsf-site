@@ -1,0 +1,148 @@
+html{
+    width: 100%;
+    font-size: 16px;
+    height:100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.helpersContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #083A28;
+    gap: 3rem;
+    margin: 1rem 0;
+    padding: 2rem;
+}
+
+.helpers{
+    display: flex;
+    justify-content: center;
+}
+
+.helper0, .helper1{
+    padding:0.35rem 1rem;
+}
+
+.helper1{
+    background-color: #D3D3D3;
+}
+
+.otherHelperContainer h4{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+.otherHelperContainer{
+    width: 28rem;
+
+}
+
+.otherHelpers{
+    display:flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    background-color: white;
+    width: 100%;
+    font-family: "Roboto", Sans-serif;
+}
+
+.otherHelpers h5{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.otherHelpers p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+
+.helperCard{
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    flex-shrink: 1;
+}
+
+.helperCard div:nth-child(1){
+    width: 5rem;
+    height: 5rem
+}
+
+.helperCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.helperCard div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+.helperCard div h4{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.helperCard div p{
+    margin:0;
+}
+
+@media screen and (max-width: 1056px){
+    .helpersContainer{
+        flex-direction: column;
+    }
+
+    .otherHelperContainer{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .helpers{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .helpers div{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:80%;
+    }
+
+    .helperCard{
+        flex-direction: column;
+        width: 100%
+    }
+
+    .helperCard div:nth-child(1){
+        width: 15rem;
+        height: 15rem
+    }
+
+
+    .helperCard div{
+        align-items: center;
+    }
+}

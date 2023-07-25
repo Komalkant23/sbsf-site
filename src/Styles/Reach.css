@@ -1,0 +1,96 @@
+.reachSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reachContainer{
+    display: flex;
+    max-width: 67rem;
+    justify-content: center;
+    padding: 1rem;
+    border-bottom: 0.15rem dashed;
+}
+
+.reachDetails{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.reachDetails h4{
+    font-weight: 600;
+    font-size: calc(1.2rem + 0.4vw);
+    text-transform: uppercase;
+}
+
+.reachDetails p{
+    font-weight: 300;
+    font-size: calc(0.7rem + 0.4vw);
+}
+
+.numberContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.counters{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+    width: 33%;
+    align-items: center;
+    border-right: 0.1rem solid rgba(0,0,0,0.5);
+    
+}
+
+.counters:last-child{
+    border-right: none;
+}
+
+.counters div:nth-child(1){
+    font-size: calc(5rem + 0.5vw);
+    color:#FFE2A9;
+    font-weight: 600;
+}
+
+.counters div:nth-child(2){
+    font-size: calc(1rem + 0.4vw);
+    font-weight: 700;
+}
+
+.reachImg{
+    width: 40%;
+}
+
+.reachImg img{
+    width: 100%;
+}
+
+@media screen and (max-width: 769px){
+    .reachContainer{
+        flex-direction: column;
+    }
+
+    .reachDetails{
+        width: 100%;
+    }
+
+    .reachImg{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 520px){
+    .counters div:nth-child(1){
+        font-size: calc(3rem + 0.5vw);
+    }
+
+    .counters div:nth-child(2){
+        font-size: calc(0.7rem + 0.5vw);
+    }
+}

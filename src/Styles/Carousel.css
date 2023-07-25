@@ -1,0 +1,77 @@
+.carouselContainer .carousel .slide{
+    height: 28rem;
+    position: relative;
+}
+
+.carouselContainer .carousel .slide img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.donateCard{
+    position: absolute;
+    bottom: -100%;
+    left: 9rem;
+    background-color: #083A28;
+    width: 40%;
+    height: 70%;
+    display: flex;
+    gap:1rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 1;
+    padding: 0 2rem;
+    transition: bottom 2s ease-in-out, opacity 2s ease-in-out;
+    opacity: 0;
+}
+
+.slick-current .donateCard{
+    bottom: 4rem;
+    opacity: 1;
+}
+
+.donateCard h1{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: calc(1rem + 1.3vw);
+    color:white;
+}
+
+.donateCard p{
+    font-weight: 400;
+    font-size: calc(0.7rem + 0.5vw);
+    color: white;
+}
+
+.donateCard button{
+    background-color: #FFE2A9;
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: transform 0.2s ease-in-out;
+    align-self: flex-start;
+}
+
+.donateCard button:hover{
+    transform: scale(0.8);
+}
+
+@media screen and (max-width: 769px) {
+    .donateCard{
+        width: 55%;
+        height: 70%;
+        left: 4rem;
+    }
+
+    .donateCard h1{
+        font-size: calc(0.9rem + 0.9vw);
+    }
+
+    .donateCard button{
+        font-size: calc(0.5rem + 0.5vw);
+    }
+}
